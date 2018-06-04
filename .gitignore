@@ -1,12 +1,23 @@
+# ------------------------------------------------ Eclipse
+.project
+.classpath
+tmp/
+.settings/
+eclipse/
+project/
+lib/
+
+# ------------------------------------------------ 其它文件
+target/
+logs/
+log/
+bin/
+*.log
+*.logs
 *.class
+resource-test.properties
+logback.xml
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# ------------------------------------------------ Intellij IDEA
+*.iml
+.idea/
