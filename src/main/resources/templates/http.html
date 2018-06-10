@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>演示http请求</title>
+</head>
+<body>
+<hr/>
+<button id="demoe1">ajax</button>
+<hr/>
+<button id="demoe2">ajax</button>
+<hr/>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#demoe1').bind('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "demo1?param0=0",
+                dataType: "json",
+                contentType: "application/x-www-form-urlencoded",
+                data: {'param1': 1},
+                success: function (data) {
+                    alert('success !!');
+                }
+            });
+        });
+
+        $('#demoe2').bind('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "demo1?param0=0",
+                dataType: "json",
+                contentType: "application/json",
+                data: {'param1': 1},
+                success: function (data) {
+                    alert('success !!');
+                }
+            });
+        })
+
+    })
+</script>
+</html>
